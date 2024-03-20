@@ -1,0 +1,344 @@
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <meta charset="utf-8">
+    <title>BVN Solutions</title>
+        <link rel="stylesheet" href="#">
+    </head>
+    <body>
+    <section class="banner" id="sec">
+        <header>
+        <a href="#" class="logo">I<font color="Red">❤</font>PU</a>
+        <div id="toggle" onclick="toggle()"></div>
+        
+        
+        
+        </header>
+        <div class="content">
+            <h2>Hello Guys 😍😎🥱🧐<br>Welcome...<br> <span>Khas PU Ki Public</span></h2>
+            <br>
+            <p>Thank You to come here...You can Download our application for all material of IT and CSE (Best For First and Second Year students).<br><br>You can get all Notes, syllabus PDF, PPT, Assignment Soluition, Pervious Year paper....<br>
+            <br>👇 Just click here to Download 👇</p>
+        <a href="https://drive.google.com/file/d/1ComGMxorhRI_BidB3QD_Yh3PSXPd5_6E/view?usp=sharing">Download Apk</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="icons8-whatsapp-48.png"></a></li>
+            <li><a href="#"><img src="insta3.png"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCqYzERlRTBH_Fh6e1fN5rUw"><img src="icons8-play-button-48.png"></a></li>
+    
+        </ul>    
+        </section>
+        <div id="navigation">
+            <ul>
+                <li><a href="#">Idhar Kuch Nahi He Sidha Apk Download Karo Or Use Karo Yaar...😄😅😅</a></li>
+
+                <!-- 
+                    <li><a href="#">About</a></li>
+                <li><a href="#">My Songs</a></li>
+                <li><a href="cover2.html">Folders</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+                 -->
+                
+            
+            </ul>
+        
+        
+        </div>
+
+
+        <style>
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header #toggle
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header #toggle:after
+{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+.banner.active header #toggle:before
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.banner.active header #toggle:after
+{
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: url(c3uhsgo1vx5412.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.banner.active
+{
+    transform: translateX(-400px);
+}
+#navigation
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: #000;
+    z-index: 1;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active
+{
+   right: 0;
+}
+#navigation ul
+{
+     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li
+{
+    list-style: none;
+}
+#navigation ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: #000;
+    margin: 10px 0;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+#navigation ul li a:hover
+{
+    
+    box-shadow: 0 0 5px rgba(3, 233, 244, 1),
+    0 0 25px rgba(3, 233, 244, 1),
+    0 0 50px rgba(3, 233, 244, 1),
+    0 0 100px rgba(3, 233, 244, 1),
+    0 0 200px rgba(3, 233, 244, 0.5),
+    0 0 300px rgba(3, 233, 244, 0.5);
+}
+.content
+{
+    max-width: 600px;
+    border: none;
+    transition: 1s;
+}
+
+.content h2
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+.content h2 span
+{
+    color: #bdc;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px 0px;
+    transition: 0.5s;
+}
+
+
+.content p
+{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+} 
+.content a
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 4px solid #fff;
+    transition: 1s;
+}
+.content a:hover
+{
+    background: #40c3ff;
+    box-shadow: 0 0 5px rgba(3, 233, 244, 1),
+    0 0 25px rgba(3, 233, 244, 1),
+    0 0 50px rgba(3, 233, 244, 1),
+    0 0 100px rgba(3, 233, 244, 1),
+    0 0 200px rgba(3, 233, 244, 0.5),
+    0 0 300px rgba(3, 233, 244, 0.5);
+    transition: 0.5s;
+}
+.sci
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+    
+}
+.sci li
+{
+    list-style: none;
+    
+}
+.sci li a
+{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px 0 0;
+    transition: 0.8s;
+}
+.sci li a:hover
+{
+    box-shadow: 0 0 5px rgba(3, 233, 244, 1),
+    0 0 25px rgba(3, 233, 244, 1),
+    0 0 50px rgba(3, 233, 244, 1),
+    0 0 100px rgba(3, 233, 244, 1),
+    0 0 200px rgba(3, 233, 244, 0.5),
+    0 0 300px rgba(3, 233, 244, 0.5);
+    background: #40c3ff;
+    
+}
+.sci li a img
+{
+    max-width: 40px;
+}
+@media (max-width: 767px)
+{
+    
+
+    header 
+    {
+        padding: 20px 50px;
+    }
+    
+    .banner 
+    {
+    
+        padding: 100px 50px;
+    }
+    .banner h2
+    {
+        font-size: 1.8em; 
+    }
+    .banner .content p,
+    .banner .content a
+    {
+        font-size: 1em;
+    }
+    .banner.active
+    {
+    transform: translateX(-250px);
+    }
+    #navigation
+    {
+        width: 250px;
+    }
+    #navigation ul li a
+    {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .sci
+    {
+        position: absolute;
+        bottom: 50px;
+        right: initial;
+        flex-direction: row;
+        
+    }
+    .sci li a
+    {
+        margin: initial;
+        margin-right: 10px;
+    }
+}
+
+
+        </style>
+        <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        </script>
+    
+    
+    </body>

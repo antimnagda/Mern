@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Maths Assignments</title>
+    <link rel="stylesheet" type="text/css" href="all.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="home.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home Page</span>
+                    </a>
+                </li>
+                
+                
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Maths Assignments</span>
+                    </a>
+                </li>
+                
+                
+                
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="maths2.html">
+                        <span class="icon"> <ion-icon name="arrow-back-circle-outline"></ion-icon></span>
+                        <span class="title">Back</span>
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+
+        <section>
+            <div class="container">
+                
+                
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"><img src="#"></div>
+                        <div class="contentBx">
+                            <h3>Assignment - 1 <br><span>...</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i:1">
+                            <!--...Aayegi Tab Mil Jayegi...-->
+                            
+                                <a class="btn2" href="https://drive.google.com/file/d/1WoYj5ljWLOwwKKVPInORNWXoLhvMbt-l/view?usp=sharing">PDF</a>
+                            
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+
+
+
+        <header>
+            <a href="maths2.html" class="logo"><img src="Img\back.png"></a><span class="title1">Maths Assignments</span>
+                <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <div class="navigation2">
+            <ul>
+                <div id="marker"></div>
+                <li><a href="home.html">Home Page</a></li>
+            <li><a href="Standard.html">Semester</a></li>
+            <li><a href="#" class="active">Assignments</a></li>
+            <li><a href="maths2.html">Back</a></li>
+            
+            
+            
+            </ul>
+            </div>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script type="text/javascript">
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation2 = document.querySelector('.navigation2');
+                menuToggle.classList.toggle('active');
+                navigation2.classList.toggle('active');
+                
+            }
+        
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelectorA("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        
+        
+        </script>
+        <script>
+            const marker = document.querySelectorAll('#marker');
+            const item = document.querySelector('ul li a');
+            
+            function indicator(e){
+                marker.style.top = e.offsetTop+'px';
+                marker.style.width = e.offsetWidth+'px';
+            }
+            
+            item.forEach(link => {
+                link.addEventListener('mousemove', (e) => {
+                    indicator(e.target);
+                    
+                })
+            })
+        </script>
+
+                <script>
+        
+                
+                    let list = document.querySelectorAll('.list');
+                    for (let i=0; i<list.length; i++){
+                        list[i].onclick = function(){
+                            let j = 0;
+                            while(j < list.length){
+                                list[j++].className = 'list';
+                            }
+                            list[i].className = 'list active';
+                        }
+                    }
+                </script>
+        
+        
+
+</body>
+</html>

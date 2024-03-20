@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>12 Subject</title>
+    <link rel="stylesheet" type="text/css" href="sub 10.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Rugved.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home Page</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Standard.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Standard</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Subject</span>
+                    </a>
+                </li>
+
+            
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Standard.html">
+                        <span class="icon"> <ion-icon name="arrow-back-circle-outline"></ion-icon></span>
+                        <span class="title">Back</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon"><p>12</p></ion-icon></span>
+                        <span class="title"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <section>
+            
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"><img src="Img\003-atom.png"></div>
+                        <div class="contentBx">
+                            <h3>Physics<br><span>...</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i:1">
+                            <a href="12 phy cha.html">Start Learnig</i></a>
+                        </li>
+                </div>
+            
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"><img src="Img\005-flasks.png"></div>
+                        <div class="contentBx">
+                            <h3>Chemistry<br><span>...</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i:1">
+                            <a href="12 che cha.html">Start Learnig</i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"><img src="Img\002-calculator.png"></div>
+                        <div class="contentBx">
+                            <h3>Maths<br><span>...</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i:1">
+                            <a href="12 mat cha.html">Start Learnig</i></a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"><img src="Img\leaf.png"></div>
+                        <div class="contentBx">
+                            <h3>Biology<br><span>...</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i:1">
+                            <a href="12 bio cha.html">Start Learnig</i></a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+                <header>
+                    <a href="Standard.html" class="logo"><img src="E:\Programming\Rugved\Img\back.png"></a>
+                        <div class="toggle" onclick="toggleMenu();"></div>
+                </header>
+                <div class="navigation2">
+                    <ul>
+                        <div id="marker"></div>
+                        <li><a href="Rugved.html">Home Page</a></li>
+                        <li><a href="Standard.html">Standard</a></li>
+                        <li><a href="sub 12.html" class="active">Subject</a></li>
+                        <li><a href="Standard.html">Back</a></li>
+                        
+                        <li><a href="#">12</a></li>
+                        
+                    
+                    
+                    </ul>
+                    </div>
+                </div>
+                
+        </section>
+        
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script type="text/javascript">
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation2 = document.querySelector('.navigation2');
+                menuToggle.classList.toggle('active');
+                navigation2.classList.toggle('active');
+                
+            }
+        
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelectorA("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        
+        
+        </script>
+        <script>
+            const marker = document.querySelectorAll('#marker');
+            const item = document.querySelector('ul li a');
+            
+            function indicator(e){
+                marker.style.top = e.offsetTop+'px';
+                marker.style.width = e.offsetWidth+'px';
+            }
+            
+            item.forEach(link => {
+                link.addEventListener('mousemove', (e) => {
+                    indicator(e.target);
+                    
+                })
+            })
+        </script>
+                <script>
+        
+                
+                    let list = document.querySelectorAll('.list');
+                    for (let i=0; i<list.length; i++){
+                        list[i].onclick = function(){
+                            let j = 0;
+                            while(j < list.length){
+                                list[j++].className = 'list';
+                            }
+                            list[i].className = 'list active';
+                        }
+                    }
+                </script>
+    </body>
+</html>

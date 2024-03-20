@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>12 Physics</title>
+        <link rel="stylesheet" href="12 physics.css">
+
+    </head>
+    <body>
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Rugved.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home Page</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Standard.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Standard</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="student detail.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Students</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Detail.html">
+                        <span class="icon"><ion-icon name="barcode-outline"></ion-icon></span>
+                        <span class="title">Detail</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="Rugved.html">
+                        <span class="icon"> <ion-icon name="arrow-back-circle-outline"></ion-icon></span>
+                        <span class="title">Back</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <section>
+            <div class="container">
+               
+                
+                
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx"> <embed src="pdf\Tution paper.pdf" type="application/pdf" width="99%" height="600px"></div>
+                        
+                    </div>
+                
+                </div>
+                <header>
+                    <a href="#" class="logo"></a>
+                        <div class="toggle" onclick="toggleMenu();"></div>
+                </header>
+                <div class="navigation2">
+                    <ul>
+                        <div id="marker"></div>
+                        <li><a href="Rugved.html">Home Page</a></li>
+                    <li><a href="Standard.html">Standard</a></li>
+                    <li><a href="St.html" class="active">Students</a></li>
+                    <li><a href="Detail.html">Detail</a></li>
+                    <li><a href="Rugved.html">Back</a></li>
+                   
+                    
+                    
+                    </ul>
+                    </div>
+            </div>
+                
+        </section>
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script type="text/javascript">
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation2 = document.querySelector('.navigation2');
+                menuToggle.classList.toggle('active');
+                navigation2.classList.toggle('active');
+                
+            }
+        
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelectorA("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        
+        
+        </script>
+        <script>
+            const marker = document.querySelectorAll('#marker');
+            const item = document.querySelector('ul li a');
+            
+            function indicator(e){
+                marker.style.top = e.offsetTop+'px';
+                marker.style.width = e.offsetWidth+'px';
+            }
+            
+            item.forEach(link => {
+                link.addEventListener('mousemove', (e) => {
+                    indicator(e.target);
+                    
+                })
+            })
+        </script>
+        
+                <script>
+        
+                
+                    let list = document.querySelectorAll('.list');
+                    for (let i=0; i<list.length; i++){
+                        list[i].onclick = function(){
+                            let j = 0;
+                            while(j < list.length){
+                                list[j++].className = 'list';
+                            }
+                            list[i].className = 'list active';
+                        }
+                    }
+                </script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
